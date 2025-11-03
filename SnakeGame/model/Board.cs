@@ -15,7 +15,7 @@ namespace SnakeGame.model
         private readonly int _height;
         private List<Actor> _actors;
         private Random _random = new();
-        private int score = 0;
+        //private int score = 0;
         //private Actor[,] _surface;
 
         public Board(int width, int height)

@@ -55,6 +55,9 @@ namespace SnakeGame.UI
                 case ConsoleKey.Escape:
                     _player.Alive = false;
                     break;
+                case ConsoleKey.T:
+                    _player.AddTail();
+                    break;
                 default:
                     if (Directions.TryGetValue(key, out Position2d pos))
                     {

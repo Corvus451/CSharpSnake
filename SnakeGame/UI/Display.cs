@@ -15,6 +15,7 @@ namespace SnakeGame.UI
             {
                 Console.SetWindowSize(width, heigth);
                 Console.SetBufferSize(width, heigth);
+                Console.BackgroundColor = ConsoleColor.DarkGray;
                 Console.CursorVisible = false;
             }
         }
@@ -25,10 +26,21 @@ namespace SnakeGame.UI
             Console.Write(ch);
         }
 
+        public static void Write(int x, int y, string text)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(text);
+        }
+
         public static void Clear(int x, int y)
         {
             Console.SetCursorPosition(x, y);
             Console.Write(' ');
+        }
+
+        internal static void clearWindow()
+        {
+            Console.Clear();
         }
     }
 }
