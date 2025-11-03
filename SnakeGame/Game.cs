@@ -33,7 +33,9 @@ namespace SnakeGame
             Display.ResetWindow(_width, _height);
             Display.clearWindow();
             _player = new Player(new Position2d(5, 5), _board);
+            Apple apple = new Apple(_board.GetRandomEmptyCell(), _board);
             _board.AddActor(_player);
+            _board.AddActor(apple);
             _controller = new Controller(_player);
             _run = true;
         }
