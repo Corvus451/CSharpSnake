@@ -17,6 +17,7 @@ namespace SnakeGame.UI
                 Console.SetBufferSize(width, heigth);
                 Console.BackgroundColor = ConsoleColor.DarkGray;
                 Console.CursorVisible = false;
+                Console.Title = "Snake Game";
             }
         }
 
